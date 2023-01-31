@@ -24,7 +24,12 @@ The repository named Project is a simple, static website built using only HTML. 
 
 ## Demo
 
-A short video demo of the complete project:
+A short video demo of the complete project: 
+
+
+https://user-images.githubusercontent.com/112818778/215674442-f1140cff-c219-426e-b7c1-c5ddc4a5ed7e.mp4
+
+
 
 
 
