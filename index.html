@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> <!--here lang is an attribute and en is a value-->
+<head>
+    <meta charset="UTF-8"> <!--Meta tag contains data about data-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title> <!--A combination of opening & closing tags and content within it is called an element-->
+</head>
+<body>
+    <!--Size of different Heading tags-->
+    <!--h1(36px), h2(30px), h3(24px), h4(18px), h5(14px), h6(12px)-->
+    <h1>HTML For Interview</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iure.</p>
+    <hr>
+    <!--Anchor Tag-->
+    <a href="https://www.google.co.in/" target="_blank" title="Click to visit">Google</a> <!--href being attribute stands for HyperText Referance.--> 
+    <!--Here, title="" displays a toolkit in box shaped when hovered on the link. Also, target="_blank" helps us to open page in different tab.-->
+    <br>
+    <!--To link Phone Number or email using anchor tag-->
+    <a href="tel:0987654321">0987654321</a>
+    <br>
+    <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+    <br>
+    <!--How to make you document downloadable-->
+    <a href="file.pdf">Download</a>
+    <hr>
+    <!--Image Tag (It is also an empty element)-->
+    <img src="Final.jpeg" alt="image" width="200px"> <!--src and alt here are attributes. src specifies the path of the image and alt displays that text if image does not show.-->
+    
+    <!--Difference between Absolute and Relative Path-->
+    <!--Relative is path that is present in the current directory and Absolute specifies the location from the root directory and carries detailed information, the path can either be present in the system or on web.-->
+    <hr>
+    <!--Picture Tag-->
+    <!--Yes there is also a picture tag!-->
+    <picture>
+        <source srcset="./Final.webp" /> 
+        <source srcset="./Final.jpeg" />
+        <img src="./Final.jpeg" alt="" width="500" height="300px"> <!--here even if we select jpeg image it displays webp image. This shows how by default the picture tag with the help of siurce srcset selects the best image.-->
+    </picture>
+    <hr>
+    <!--picture tag supports WebP images. WebP is the modern image file type.-->
+    <!--Figure Tag, it is actually caption for images-->
+    <figure>
+        <img src="Final.webp" alt="" width="500" height="300px">
+        <figcaption>Caption: The First Step</figcaption>
+    </figure>
+    <hr>
+</body>
+</html>

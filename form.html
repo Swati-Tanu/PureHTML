@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <!--Attributes by defination is used to provide us more and more info about the tag.-->
+   <form action="#">
+    <div>
+    <!--The for attribute present in label tag defines the purpose of input tag that comes after it. The id of that input tag should be same as id of label tag.-->
+    <label for="username">Username: </label>
+    <!--The type attribute present in input tag defines the type of data.-->
+    <input type="text" name="" id="username" placeholder="Enter your username" value="" maxlength="25"  required>
+    <br>
+    <!--the value attribute shows the value that is by deafult, same as placeholder but using value we can catch the info and perform operations.-->
+    <!--readonly attribute makes the form as read only mode-->
+    <!--maxlength defines the number of characters allowed.-->
+    <!--required attribute specifies that an input field must be filled-->
+    <!--min and max attributes helps to define the limit, especially used in terms of quantity, date, age, etc.-->
+    <br>
+        <label for="dateminmax">Enter your DOB:</label>
+        <input 
+        type="date" 
+        name="dateminmax"
+        id="dateminmax"
+        min="2000-01-01"
+        max="2022-01-31"
+        autofocus
+        autocomplete="off">
+        <!--autofocus specifies that the input field should automatically get focus when the page loads.-->
+        <!--autocomplete gives suggestions can be off or on.-->
+        <label for="quantity">Quantity (between 1 to 5)</label>
+        <input 
+        type="number" 
+        name="quantity"
+        id="quantity"
+        min="1"
+        max="5">
+        <hr>
+    <!--Multiple attribute specifies that user is allowed to enter more than one value in input field. The type in multiple attribute is file-->
+    <label for="file">Select your File</label>
+    <input type="file" id="file" name="file" multiple>
+    <hr>
+    <!--The input list refers to a <datalist> element that contains pre-defined options for an <input> element.-->
+    <input list="browsers" name="browsers" placeholder="Select Browser">
+    <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+    </datalist>  
+    <hr>
+    <!--HTML Input Type-->
+    <!--text,password,radio,checkbox,submit,color,number etc-->
+    <input type="password" placeholder="password">
+    <input type="email" placeholder="email"> 
+    <input type="number" placeholder="number">
+    <input type="color" placeholder="color">
+    <input type="date" placeholder="date"> 
+    <input type="radio" placeholder="radio"> 
+    <input type="checkbox" placeholder="checkbox"> 
+    <input type="submit" placeholder="submit"> 
+    <input type="range" placeholder="range"> 
+    <input type="progress" placeholder="progress"> 
+    <hr>
+    <!--The select element defines a drop-down list-->
+    <label for="cars">Choose a car:</label>
+    <select name="" id="cars">
+        <option value="cars">Cars</option>
+        <option value="volvo">Volvo</option>
+        <option value="audi">Audi</option>
+        <option value="fiat">Fiat</option>
+    </select>
+    <!--Now the difference between datalist and select is that select allows user to select from the given options only while in datalist users can add their own options too.-->
+    <hr>
+    <!--Textarea is used formulti-line.-->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!--The button elements defines a clickable button.-->
+    <button onclick="alert('Hey!')">Click</button>
+    <hr>
+    <!--fieldset defines an area for some other actions-->
+    <fieldset>
+        <legend>Portfolio</legend>
+        <label for="fname"></label>
+        <input type="text" id="fname" placeholder="First Name">
+        <br>
+        <br>
+        <label for="lname"></label>
+        <input type="text" id="lname" placeholder="Last Name">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    </div>
+   </form>
+</body>
+</html>
