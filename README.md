@@ -38,7 +38,7 @@ https://user-images.githubusercontent.com/112818778/215674442-f1140cff-c219-426e
 ## Deployment
 
 The deployed link of the project:
-#### thepurehtmlwebsite.netlify.app
+#### https://thepurehtmlwebsite.netlify.app/
 
 ## Contributions
 
